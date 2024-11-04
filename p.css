@@ -1,0 +1,44 @@
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill-item span {
+    width: 50px;
+    font-weight: bold;
+}
+
+.progress {
+    position: relative;
+    height: 20px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    width: 100%;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.percentage {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* Atur lebar sesuai dengan persentase */
+.progress-80 {
+    width: 80%;
+}
+
+.progress-75 {
+    width: 75%;
+}
+
+.progress-65 {
+    width: 65%;
+}

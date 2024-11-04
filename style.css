@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com");
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #f7f7f2;
+    color: #1e1e24;
+}
+header{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 8rem;
+}
+.logo{
+    color: #1e1e24;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.navmenu{
+    display: flex;
+}
+.navmenu a{
+    display: inline-block;
+    margin: 0 1.5rem;
+    color: #1e1e24;
+    font-weight: 500;
+    transition: all 0.6s;
+}
+.navmenu a:hover{
+    transform: translateY(-5px);
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 2rem 5rem 0 18rem;
+    gap: 1rem;
+}
+.home-img img{
+    width: 100%;
+    height: auto;
+}
+.home-text h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.home-text h3{
+    position: relative;
+    padding-left: 6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.home-text h3::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: #1e1e24;
+    left: 0;
+    top: 1rem;
+}
+.home-text p{
+    margin-bottom: 1rem;
+}
+.btn{
+    display: inline-block;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #f7f7f2;
+    border: 1px solid #1e1e24;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    background: #1e1e24;
+    transition: all 0.5s;
+}
+.btn:hover{
+    background-color: #f7f7f2;
+    color: #1e1e24;
+    transform: translateY(5px)
+}
+.sosial-icon{
+    position: absolute;
+    top: 40%;
+    padding: 0 8rem;
+}
+.sosial-icon i{
+    display: block;
+    margin: 25px 0;
+    color: #1e1e24;
+    font-size: 1.5rem;
+    transition: all 0.6s;
+}
+.sosial-icon i:hover{
+    transform: rotate3d(0, 0 , 1, 90deg);
+}
+.scroll-btn{
+    position: absolute;
+    bottom: 7%;
+    left: 9%;
+}
+.scroll-btn{
+    color: #1e1e24;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.pre-title{
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #656d72;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+.pre-title::before{
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: #d9d9d9;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #f1f1f1;
+}
+.about text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about h4{
+    color: #232e35;
+    font-size:30px;
+}
+.about h5{
+    color: #232e35;
+    position: relative;
+    padding-left: 6rem;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.about h5::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: #1e1e24;
+    left: 0;
+    top: 1rem;
+}
+.about p{
+    color: #232e35;
+}
+
+#skill{
+    padding: 6rem 0;
+    background: #fbfbfb;
+}
+.skill-main{
+    padding: 40px;
+}
+.skill-edu{
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+.skill-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+.education{
+    display: flex;
+    gap: 1rem;
+}
+.education .line{
+    padding: 0 0.7rem;
+}
+.education .line div{
+    width: 2px;
+    height: 100%;
+    background: #656d72;
+    position: relative;
+}
+.education-info p{
+    margin: 0.6rem 0 1.4rem;
+}
+.education-years{
+    margin-bottom: 3rem;
+}
+.education .line div:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #656d72;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+.skill-item span {
+    width: 50px;
+    font-weight: bold;
+}
+
+.progress {
+    position: relative;
+    height: 20px;
+    background-color: #656d72;
+    border-radius: 5px;
+    width: 100%;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.percentage {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* Atur lebar sesuai dengan persentase */
+.progress-80 {
+    width: 80%;
+}
+
+.progress-75 {
+    width: 75%;
+}
+
+.progress-65 {
+    width: 65%;
+}
+
+#contact{
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+.contact-form div{
+    margin-bottom: 1.4rem;
+}
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    font-family: "Roboto", sans-serif;
+    background: #fbfbfb;
+    border: 1px solid #f1f1f1;
+    border-radius: 3px;
+    resize: none;
+}
+
+.contact-form input::placeholder,  .contact-form textarea::placeholder{
+    color: #9d9fa1;
+}
+
+.btn-submit{
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    color: #fff;
+    border: 1px solid #1e1e24;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    background: #1e1e24;
+    transition: all 0.5s;
+}
+.btn-submit:hover{
+    background-color: #f7f7f2;
+    color: #1e1e24;
+    transform: translateY(5px)
+}
+
+.contact-item{
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+.contact-icon{
+    background: #fff;
+    border: 3px solid #1e1e24;;
+    width: 53px;
+    height: 53px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-detail h4{
+    margin-bottom: 0.6rem;
+}
+.footer{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
